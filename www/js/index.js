@@ -46,7 +46,6 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-    document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
         console.log(device.cordova);
         document.write("You are using" + device.cordova);
