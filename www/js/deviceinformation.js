@@ -15,5 +15,12 @@ DeviceInformationLoader(require, exports, module);
 
 cordova.define("cordova/plugin/DeviceInformation", DeviceInformationLoader);
 
+            var deviceInfo = cordova.require("cordova/plugin/DeviceInformation");
+deviceInfo.get(function(result) {
+        document.write("result = " + result);
+    }, function() {
+        document.write("error");
+    });
+
 
 
