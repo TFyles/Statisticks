@@ -51,4 +51,14 @@ var app = {
     }
 };
 
+    window.localStorage.setItem("Phone", "BlackBerry");
+    window.localStorage.setItem("Wallet", "Brown");
+    window.localStorage.setItem("Keyboard", "Qwerty");
+    window.localStorage.setItem("Screen", "24");
+    window.localStorage.setItem("Shoes", "Brown");
+
+    var phone = window.localStorage.getItem(“Phone”);
+    document.write("Hi");
+    $("#area").text("Your phone is: " + phone);   
+    
 
