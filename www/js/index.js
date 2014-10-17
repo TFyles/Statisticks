@@ -16,6 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+ /*
 var app = {
     // Application Constructor
     initialize: function() {
@@ -50,6 +52,10 @@ var app = {
 
     }
 };
+*/
+
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
 
     window.localStorage.setItem("Phone", "BlackBerry");
     window.localStorage.setItem("Wallet", "Brown");
@@ -60,5 +66,7 @@ var app = {
     var phone = window.localStorage.getItem(“Phone”);
     document.write("Hi");
     $("#area").text("Your phone is: " + phone);   
+
+}
     
 
