@@ -114,5 +114,5 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 #graphB1 {
-    padding-top: 50px;
+    top: 200px;
 }
