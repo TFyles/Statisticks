@@ -40,6 +40,12 @@
     <script src="cordova.js"></script>
     <!-- phantom library, needed for XDK "legacy" container CORS -->
     <script src="xhr.js"></script>
+    <link rel="stylesheet" href="css/contour.min.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/contour.min.js"></script>
     
     <script>
         var onDeviceReady=function(){                             // called when Cordova is ready
@@ -70,7 +76,7 @@
         <ul class="list">
             <li><a href="#page1" class="icon home">Home</a></li>
             <li><a href="#page2" class="icon heart">Dez</a></li>
-            <li><a href="#page3" class="icon chat">Messages</a></li>
+            <li><a href="#page3" class="icon chat">Graph</a></li>
             <li><a href="#page4" class="icon user">Profile</a></li>
         </ul>
     </nav>
@@ -107,12 +113,20 @@
         
         </div>
         
-        <div class="panel" title="Messages" id="page3" data-footer="none">
+        <div class="panel" title="Graph" id="page3" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Messages</h1>
+                <h1>Graph</h1>
             </header>
-            <p>This is view for third menu item</p>
+            <div class="myFirstChart" style="width:80%; height:150px;"></div>
+            <script>
+                new Contour({
+                el: '.myFirstChart'
+                })
+                .cartesian()
+                .line([1, 2, 3, 4, 5, 4, 3, 2, 1])
+                .render();
+            </script>
         </div>
         
         <div class="panel" title="Profile" id="page4" data-footer="none">
