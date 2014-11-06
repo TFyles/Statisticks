@@ -118,16 +118,17 @@
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Graph</h1>
             </header>
+            <button onclick="makeGraph()">Click me</button>
             <div class="myFirstChart" style="width:300px; height:150px;"></div>
             <script>
-                var num1 = parseInt(window.prompt("Please enter a number from 1 to 100", ""), 10);
-                var num2 = parseInt(window.prompt("Please enter a number from 1 to 100", ""), 10);
+               function makeGraph(){
                 new Contour({
                 el: '.myFirstChart'
                 })
                 .cartesian()
-                .line([num1, num2, 3, 4, 5, 4, 3, 2, 1])
+                .line([3, 5, 3, 4, 5, 4, 3, 2, 1])
                 .render();
+                };
             </script>
         </div>
         
