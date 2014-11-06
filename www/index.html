@@ -120,11 +120,13 @@
             </header>
             <div class="myFirstChart" style="width:300px; height:150px;"></div>
             <script>
+                var num1 = parseInt(window.prompt("Please enter a number from 1 to 100", ""), 10);
+                var num2 = parseInt(window.prompt("Please enter a number from 1 to 100", ""), 10);
                 new Contour({
                 el: '.myFirstChart'
                 })
                 .cartesian()
-                .line([1, 2, 3, 4, 5, 4, 3, 2, 1])
+                .line([num1, num2, 3, 4, 5, 4, 3, 2, 1])
                 .render();
             </script>
         </div>
