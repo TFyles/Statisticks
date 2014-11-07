@@ -80,6 +80,7 @@
             <li><a href="#page2" class="icon heart">Dez</a></li>
             <li><a href="#page3" class="icon chat">Graph</a></li>
             <li><a href="#page4" class="icon user">Profile</a></li>
+            <li><a href="#page5" class="icon user">Form</a></li>
         </ul>
     </nav>
     
@@ -166,5 +167,29 @@
         
     </div>
 </div>
+
+ <div class="panel" title="Form" id="page5" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Form</h1>
+            </header>
+            <br>
+            <form>
+                <label for="text-1">Name:</label>
+                <input type="text" data-clear-btn="true" name="text-1" id="text-1" value="">
+                <label for="email-1">Email:</label>
+                <input type="email" data-clear-btn="true" name="email-1" id="email-1" value="">
+                <label for="tel-1">Telephone Number:</label>
+                <input type="tel" data-clear-btn="true" name="tel-1" id="tel-1" value="">
+                <label for="date-1">Date Of Birth:</label>
+                <input type="date" data-clear-btn="true" name="date-1" id="date-1" value="">
+                <label for="pass-1">Password:</label>
+                <input type="password" data-clear-btn="true" name="pass-1" id="pass-1" value="" autocomplete="off">
+                <button>Submit:</button>
+
+
+            </form> 
+            
+        </div>
 </body>
 </html>
