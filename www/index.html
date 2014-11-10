@@ -123,16 +123,50 @@
             </header>
             <br>
             <br>
-            <button onclick="makeGraph()" id="graphB1">Click me</button>
-            <div class="myFirstChart" style="width:300px; height:150px;"></div>
-            <script>
-               function makeGraph(){
+            <div class="myChart" style="width:80%; height:300px;"></div>
+             <BR>
+             <BR>
+             <div class="myFirstChart" style="width:80%; height:300px;"></div>
+
+                 <FORM NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+                 <INPUT TYPE="number" NAME="num1" VALUE=""><P>
+                 <INPUT TYPE="number" NAME="num2" VALUE=""><P>
+                 <INPUT TYPE="number" NAME="num3" VALUE=""><P>
+                 <INPUT TYPE="number" NAME="num4" VALUE=""><P>
+                 <INPUT TYPE="number" NAME="num5" VALUE=""><P>
+                 <INPUT TYPE="number" NAME="num6" VALUE=""><P>
+                 <INPUT TYPE="button" NAME="button" Value="Click" onClick=" makeGraph(this.form)">
+                 </FORM>
+                 <button onclick="makePie()">Make Pie</button>
+
+              </body>
+
+
+              <script>
+               function makeGraph(form){
+                var numero1 = form.num1.value;
+                var numero2 = form.num2.value;
+                var numero3 = form.num3.value;
+                var numero4 = form.num4.value;
+                var numero5 = form.num5.value;
+                var numero6 = form.num6.value;
                 new Contour({
-                el: '.myFirstChart'
+                el: '.myFirstChart',
+                xAxis: { orient: 'bottom' },
+                xAxis: { categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'] },
+                xAxis: { title: 'Week' },
+                yAxis: { max: 100 },
+                chart: { animations : { enable: true } } 
                 })
                 .cartesian()
-                .line([3, 5, 3, 4, 5, 4, 3, 2, 1])
+                .line([numero1, numero2, numero3, numero4, numero5, numero6,])
                 .render();
+                };
+
+                function makePie(){
+                  new Contour({el: '.myChart'})
+                  .pie([1,2,3,4])
+                  .render();
                 };
             </script>
         </div>
