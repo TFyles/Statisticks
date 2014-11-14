@@ -94,9 +94,8 @@ function random() {
     return !Math.round(Math.random()); 
     }
 
-document.addEventListener("deviceready", function(){
-
 function BallRand(){
+
     var Num = Math.floor((Math.random() * 20) + 1) ;
 
     switch (Num) {
@@ -181,6 +180,5 @@ function BallRand(){
             navigator.vibrate(3000);
             break;
         }
-
 }
 
