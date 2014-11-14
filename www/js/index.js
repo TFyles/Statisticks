@@ -71,15 +71,23 @@ $(document).on("pagecreate","#pageone",function(){
         $(this).css('color', 'blue');
     });  
 
-
-    function random() { 
-    return !Math.round(Math.random()); 
+    $( "#makeRnd" ).click(function() {
+    if (random() == true)
+    {
+        navigator.notification.beep(3);
+    }
+    else {
+        navigator.notification.vibrate(2000);
     }
 
-    $( "#makeRnd" ).click(function() {
-    document.getElementById("rnd").innerHTML = random();
+    $("#rnd").text(random());
     });
+
 
 });
 
+
+function random() { 
+    return !Math.round(Math.random()); 
+    }
 
