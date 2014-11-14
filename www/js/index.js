@@ -78,8 +78,8 @@ $(document).on("pagecreate","#pageone",function(){
         if (random() == true) {
             navigator.notification.vibrate(1000);
         }
-        else {
-            navigator.notification.vibrate(2000);
+        else if (random() = false) {
+            navigator.notification.vibrate(5000);
         }
 
     });
