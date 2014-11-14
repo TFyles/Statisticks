@@ -119,22 +119,19 @@
         <div class="panel" title="8 Ball" id="page3" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Dez</h1>
+                <h1>8 Ball</h1>
             </header>
-            <div class="app">
-            <h1>Does Dez have a Girlfriend?</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Maybe this time</p>
-                <p class="event received">Dez doesn't have a girlfriend yet</p>
+            <br>
+            <br>
+            <FORM NAME="8form" ACTION="" METHOD="GET">
+            <label for="ask"> Please Enter Your Question:</label>
+            <input type="text" name="ask" id="ask" value="">
+            <INPUT TYPE="button" NAME="button" Value="Click" onClick="BallRand()">
+            </FORM>
+            <br>
+            <br>
+            <p id="ans"></p>
 
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-        
         </div>
         
         <div class="panel" title="Graph" id="page4" data-footer="none">
