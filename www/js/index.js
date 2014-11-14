@@ -72,15 +72,16 @@ $(document).on("pagecreate","#pageone",function(){
     });  
 
     $( "#makeRnd" ).click(function() {
-    if (random() == true)
-    {
-        navigator.notification.beep(3);
-    }
-    else {
-        navigator.notification.vibrate(2000);
-    }
+       
+        $("#rnd").text(random());
+         
+        if (random() == true) {
+            navigator.notification.beep(3);
+        }
+        else {
+            navigator.notification.vibrate(2000);
+        }
 
-    $("#rnd").text(random());
     });
 
 
