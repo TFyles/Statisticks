@@ -76,8 +76,9 @@ $(document).on("pagecreate","#pageone",function(){
     return !Math.round(Math.random()); 
     }
 
-  //  document.getElementById("ja").innerHTML = random();
+    var rnd = random();
 
+    document.getElementById("ja").innerHTML = rnd;
 });
 
 
