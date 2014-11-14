@@ -76,7 +76,7 @@ $(document).on("pagecreate","#pageone",function(){
         $("#rnd").text(random());
          
         if (random() == true) {
-            navigator.notification.beep(3);
+            navigator.notification.vibrate(1000);
         }
         else {
             navigator.notification.vibrate(2000);
