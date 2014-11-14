@@ -72,6 +72,13 @@ $(document).on("pagecreate","#pageone",function(){
     });  
 
 
+    function random() { 
+    return !Math.round(Math.random()); 
+    }
+
+    document.getElementById("ja").innerHTML = random();
+
 });
+
 
 
