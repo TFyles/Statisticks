@@ -78,7 +78,7 @@ $(document).on("pagecreate","#pageone",function(){
 
     var rnd = random();
 
-    document.getElementById("ja").innerHTML = rnd;
+    document.getElementById("rnd").innerHTML = rnd;
 });
 
 
