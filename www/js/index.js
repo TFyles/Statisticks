@@ -182,7 +182,5 @@ function BallRand(){
             break;
         }
 
-    }
-
 }
 
