@@ -100,63 +100,63 @@ function BallRand(){
     switch (Num) {
         case 1: 
             $("#ans").text("It is Certain");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 2:
             $("#ans").text("It is decidedly so");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 3:
             $("#ans").text("Without a doubt");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 4:
             $("#ans").text("Yes definitely");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 5:
             $("#ans").text("You may rely on it");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 6:
             $("#ans").text("As I see it, yes");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 7:
             $("#ans").text("Most likely");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 8:
             $("#ans").text("Outlook good");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 9:
             $("#ans").text("Yes");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 10:
             $("#ans").text("Signs point to yes");
-            navigator.notification.beep(3);
+            navigator.beep(3);
             break;
         case 11:
             $("#ans").text("Reply hazy try again");
-            navigator.notification.beep(1);
+            navigator.beep(1);
             break;
         case 12:
             $("#ans").text("Ask again later");
-            navigator.notification.beep(1);
+            navigator.beep(1);
             break;
         case 13:
             $("#ans").text("Better not tell you now");
-            navigator.notification.beep(1);
+            navigator.beep(1);
             break;
         case 14:
             $("#ans").text("Cannot predict now");
-            navigator.notification.beep(1);
+            navigator.beep(1);
             break;
         case 15:
             $("#ans").text("Concentrate and ask again");
-            navigator.notification.beep(1);
+            navigator.beep(1);
             break;
         case 16:
             $("#ans").text("Don't count on it");
