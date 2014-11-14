@@ -78,9 +78,9 @@
         <ul class="list">
             <li><a href="#page1" class="icon home">Home</a></li>
             <li><a href="#page2" class="icon heart">Dez</a></li>
-            <li><a href="#page3" class="icon chat">Graph</a></li>
-            <li><a href="#page4" class="icon user">Profile</a></li>
-            <li><a href="#page5" class="icon user">Form</a></li>
+            <li><a href="#page3" class="icon chat">8 Ball</a></li>
+            <li><a href="#page4" class="icon user">Graph</a></li>
+            <li><a href="#page5" class="icon user">Touch</a></li>
         </ul>
     </nav>
     
@@ -115,8 +115,29 @@
         </script>
         
         </div>
+
+        <div class="panel" title="8 Ball" id="page3" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Dez</h1>
+            </header>
+            <div class="app">
+            <h1>Does Dez have a Girlfriend?</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Maybe this time</p>
+                <p class="event received">Dez doesn't have a girlfriend yet</p>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
         
-        <div class="panel" title="Graph" id="page3" data-footer="none">
+        </div>
+        
+        <div class="panel" title="Graph" id="page4" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Graph</h1>
@@ -171,18 +192,18 @@
             </script>
         </div>
         
-        <div class="panel" title="Profile" id="page4" data-footer="none">
+        <div class="panel" title="touch" id="page5" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Profile</h1>
             </header>
             <script type="text/javascript" src="js/index.js"></script>
             <div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>The taphold Event</h1>
-  </div>
+            <div data-role="header">
+                <h1>The taphold Event</h1>
+            </div>
 
-  <div data-role="main" class="ui-content">
+        <div data-role="main" class="ui-content">
   
         <button id="tapholdtext">If you tap and hold me for one second, I will disappear</button>
         <button id="taptext">If you tap me I will turn red.</button>
