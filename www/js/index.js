@@ -76,11 +76,10 @@ $(document).on("pagecreate","#pageone",function(){
     return !Math.round(Math.random()); 
     }
 
-    $( "makeRnd" ).click(function() {
+    $( "#makeRnd" ).click(function() {
     document.getElementById("rnd").innerHTML = random();
     });
 
 });
-
 
 
