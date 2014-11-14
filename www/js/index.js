@@ -182,7 +182,6 @@ function BallRand(){
         }
 }
 
-/*
  function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
     }
@@ -221,5 +220,3 @@ function BallRand(){
             watchID = null;
         }
     }
-
-*/
