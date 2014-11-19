@@ -182,7 +182,7 @@ function BallRand(){
         }
 }
 
- function onLoad() {
+ /* function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
     }
 
@@ -226,3 +226,4 @@ function BallRand(){
         CaptureCB captureSuccess, CaptureErrorCB captureError, [CaptureVideoOptions options]
         );
     }
+*/
