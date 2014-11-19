@@ -220,3 +220,11 @@ function BallRand(){
             watchID = null;
         }
     }
+
+    function startRecord(){
+        navigator.device.capture.captureVideo(
+        CaptureCB captureSuccess, CaptureErrorCB captureError, [CaptureVideoOptions options]
+        );
+
+        
+    }
