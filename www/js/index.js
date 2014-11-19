@@ -226,4 +226,3 @@ function BallRand(){
         CaptureCB captureSuccess, CaptureErrorCB captureError, [CaptureVideoOptions options]
         );
     }
-}
