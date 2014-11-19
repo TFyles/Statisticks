@@ -181,3 +181,49 @@ function BallRand(){
             break;
         }
 }
+
+ function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    function onDeviceReady() {
+        alert("Device is Ready");
+        alert(device.available);
+    }
+
+    function getAcceleration(){
+        navigator.accelerometer.getCurrentAcceleration(onAccelSuccess, onError);
+    }
+
+    function onAccelSuccess(acceleration) {
+        var element = document.getElementById('accelerometer');
+        element.innerHTML = 'Acceleration X: ' + acceleration.x         + '<br />' +
+                            'Acceleration Y: ' + acceleration.y         + '<br />' +
+                            'Acceleration Z: ' + acceleration.z         + '<br />' +
+                            'Timestamp: '      + acceleration.timestamp + '<br />';
+    }
+
+    function onError() {
+        alert('onError!');
+    }
+
+    function startWatch() {
+        // Update acceleration every 1 seconds
+        var options = { frequency: 1000 };
+
+        watchID = navigator.accelerometer.watchAcceleration(onAccelSuccess, onError, options);
+    }
+
+    function stopWatch() {
+        if (watchID) {
+            navigator.accelerometer.clearWatch(watchID);
+            watchID = null;
+        }
+    }
+
+    function startRecord(){
+        navigator.device.capture.captureVideo(
+        CaptureCB captureSuccess, CaptureErrorCB captureError, [CaptureVideoOptions options]
+        );
+    }
+}
