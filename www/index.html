@@ -81,7 +81,8 @@
             <li><a href="#page3" class="icon chat">8 Ball</a></li>
             <li><a href="#page4" class="icon user">Timer</a></li>
             <li><a href="#page5" class="icon user">Graph</a></li>
-            <li><a href="#page6" class="icon user">Touch</a></li>
+            <li><a href="#page6" class="icon user">Map</a></li>
+            <li><a href="#page7" class="icon user">Location</a></li>
         </ul>
     </nav>
     
@@ -199,16 +200,36 @@
                 };
             </script>
         </div>
-        
-        <div class="panel" title="touch" id="page6" data-footer="none">
+
+        <div class="panel" title="Map" id="page6" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
-                <h1>Profile</h1>
+                <h1>Map</h1>
+            </header>
+            <div class="app2">
+            <h1>Map</h1>
+                <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to device</p>
+                <p class="event received">Device is ready</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDGPztwY1erO8b2UO9IDhhI8lldfDP0-Is&sensor=false"> </script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+            </div>
+        
+        <div class="panel" title="touch" id="page7" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Location</h1>
             </header>
             <script type="text/javascript" src="js/index.js"></script>
             <div data-role="page" id="pageone">
             <div data-role="header">
-                <h1>The taphold Event</h1>
+                <h1>Location</h1>
             </div>
 
         <div data-role="main" class="ui-content">
@@ -247,10 +268,7 @@
  
   </div>
   
-</div> 
-
-         
-
+  </div> 
 </div>
 </body>
 </html>

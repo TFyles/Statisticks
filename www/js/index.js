@@ -89,8 +89,37 @@ var locationOptions = {
     $('#stopButton').click(function(){
         navigator.geolocation.clearWatch(id);
     });
+var app2{
+    //constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    //Bind Event Listiner
+    bindEvents: function(){
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    //Device ready event handler
+    onDeviceReady: function(){
+        navigator.geolocation.getCurrentPosition(app2.onSuccess, app2.onError);
+    },
+    onSuccess: function(position) {
+        var longitude = position.coords.longitude;
+        var latitude = position.coords.latitude;
+        var latlong = new google.maps.LatLng(latitude, longitude);
 
- 
+        var mapOptions = {
+            center: latlong,
+            zoom: 16,
+            mapTypeId: google.maps.mapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("geolocation"), mapOptions);
+    },
+
+    onError: function(error) {
+        alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n' );
+    },
+};
 var app = {
     // Application Constructor
     initialize: function() {
