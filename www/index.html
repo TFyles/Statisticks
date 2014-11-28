@@ -205,20 +205,16 @@
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Map</h1>
+                <style type="text/css">
+                 html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+                </style>
+                <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGPztwY1erO8b2UO9IDhhI8lldfDP0-Is">
+                </script>
+                <script type="text/javascript" src="js/maps.js"></script>
+                <script type="text/javascript" src="index.js"></script>
             </header>
-            <div class="app2">
-            <h1>Map</h1>
-                <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to device</p>
-                <p class="event received">Device is ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDGPztwY1erO8b2UO9IDhhI8lldfDP0-Is&sensor=false"> </script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+            <div id="map-canvas"></div>
             </div>
         
         <div class="panel" title="touch" id="page7" data-footer="none">
@@ -231,7 +227,7 @@
             <div data-role="header">
                 <h1>Location</h1>
             </div>
-            <div id="geolocation"></div>
+
 
         <div data-role="main" class="ui-content">
        <!--
