@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
- 
+
  //when the jQuery Mobile page is initialised
 $(document).on('pageinit', function() {
     
@@ -53,7 +53,7 @@ function successPosition(position) {
     
     //OK. Now we want to update the display with the correct values
     $('#time').val("Recieved data at " + time);
-    $('#lattext').val("I should contain the latitude data...");
+    $('#lattext').val(latitude);
     
 }
 
