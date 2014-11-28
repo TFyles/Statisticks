@@ -51,6 +51,11 @@ function successPosition(position) {
     var time = position.timestamp;
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
+    var altitude = position.coords.altitude ;
+    var accur = position.coords.accuracy ;
+    var altaccur = position.coords.altitudeAccuracy;
+    var heading = position.coords.heading;
+    var speed = position.coords.speed;
 
     console.log(longitude);
     
@@ -58,7 +63,13 @@ function successPosition(position) {
     $('#time').val("Recieved data at " + time);
     $('#lattext').val(latitude);
     $('#longtext').val(longitude);
-    
+    $('#alttext').val(altitude);
+    $('#acctext').val(accur);
+    $('#altactext').val(altaccur);
+    $('#headtext').val(heading);
+    $('#speedtext').val(speed);
+
+
 }
 
 //called if the position is not obtained correctly
