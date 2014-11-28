@@ -17,6 +17,7 @@
  * under the License.
  */
 var id;
+var locationOptions;
  //when the jQuery Mobile page is initialised
 $(document).on('pageinit', function() {
     
