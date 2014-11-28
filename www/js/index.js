@@ -41,7 +41,7 @@ function getPosition() {
 
 
 //called when the position is successfully determined
-function successPosition(position) {
+function success (position) {
     
     //You can find out more details about what the position obejct contains here:
     // http://www.w3schools.com/html/html5_geolocation.asp
@@ -73,7 +73,7 @@ function successPosition(position) {
 }
 
 //called if the position is not obtained correctly
-function failPosition(error) {
+function fail (error) {
     //change time box to show updated message
     $('#time').val("Error getting data: " + error);
     
