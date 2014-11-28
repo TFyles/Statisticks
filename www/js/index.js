@@ -36,7 +36,7 @@ function getPosition() {
     $('#time').val("Getting data...");
     
     //instruct location service to get position with appropriate callbacks
-    navigator.geolocation.watchPosition(success, fail, locationOptions);
+    id = navigator.geolocation.watchPosition(success, fail, locationOptions);
 }
 
 
@@ -86,7 +86,7 @@ var locationOptions = {
     };
 
     $('#stopButton').click(function(){
-        navigator.geolocation.clearWatch(watchID);
+        navigator.geolocation.clearWatch(id);
     });
 
  
