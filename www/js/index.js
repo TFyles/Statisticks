@@ -89,6 +89,7 @@ var locationOptions = {
     $('#stopButton').click(function(){
         navigator.geolocation.clearWatch(id);
     });
+
 var app2{
     //constructor
     initialize: function() {
@@ -100,7 +101,7 @@ var app2{
     },
     //Device ready event handler
     onDeviceReady: function(){
-        navigator.geolocation.getCurrentPosition(app2.onSuccess, app2.onError);
+        navigator.geolocation.getCurrentPosition( onSuccess, onError);
     },
     onSuccess: function(position) {
         var longitude = position.coords.longitude;
