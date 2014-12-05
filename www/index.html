@@ -79,10 +79,11 @@
             <li><a href="#page1" class="icon home">Home</a></li>
             <li><a href="#page2" class="icon heart">Dez</a></li>
             <li><a href="#page3" class="icon chat">8 Ball</a></li>
-            <li><a href="#page4" class="icon user">Timer</a></li>
-            <li><a href="#page5" class="icon user">Graph</a></li>
-            <li><a href="#page6" class="icon user">Map</a></li>
-            <li><a href="#page7" class="icon user">Location</a></li>
+            <li><a href="#page4" class="icon user">Sensor</a></li>
+            <li><a href="#page5" class="icon user">Timer</a></li>
+            <li><a href="#page6" class="icon user">Graph</a></li>
+            <li><a href="#page7" class="icon user">Map</a></li>
+            <li><a href="#page8" class="icon user">Location</a></li>
         </ul>
     </nav>
     
@@ -118,6 +119,7 @@
         
         </div>
 
+
         <div class="panel" title="8 Ball" id="page3" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
@@ -138,7 +140,40 @@
 
         </div>
 
-        <div class="panel" title="Video" id="page4" data-footer="none">
+        <div class="panel" title="Sensor" id="page4" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Sensor</h1>
+                <script type="text/javascript" src="js/sensor.js"></script>
+            </header>
+              <div data-role="content">
+             
+                    <label for="flipswitch">Sensor:</label>
+                    <select name="flipswitch" id="flipswitch" data-role="slider">
+                        <option value="off">Off</option>
+                        <option value="on">On</option>
+                    </select>
+                   
+                    <label for="textarea">Current values:</label>
+                    <input type="text" name="sensorX" id="sensorX" value=""  />
+                    <input type="text" name="sensorY" id="sensorY" value=""  />
+                    <input type="text" name="sensorZ" id="sensorZ" value=""  />
+                    <input type="text" name="timestamp" id="timestamp" value=""  />
+                    
+                    <label for="slider">Update (ms):</label>
+                    <input id="slider" type="range" name="slider" value="3000" min="0" max="10000" />
+                
+              </div>
+              
+              <div data-role="footer">
+                <h4>Footer</h4>
+              </div>
+            
+        
+        </div>
+
+
+        <div class="panel" title="Video" id="page5" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Video</h1>
@@ -146,7 +181,7 @@
             <p>Timer Page</p>
         </div>
         
-        <div class="panel" title="Graph" id="page5" data-footer="none">
+        <div class="panel" title="Graph" id="page6" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Graph</h1>
@@ -201,7 +236,7 @@
             </script>
         </div>
 
-        <div class="panel" title="Map" id="page6" data-footer="none">
+        <div class="panel" title="Map" id="page7" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Map</h1>
@@ -217,7 +252,7 @@
             <div id="map-canvas"></div>
             </div>
         
-        <div class="panel" title="touch" id="page7" data-footer="none">
+        <div class="panel" title="touch" id="page8" data-footer="none">
             <header>
                 <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
                 <h1>Location</h1>
