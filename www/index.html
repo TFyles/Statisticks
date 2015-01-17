@@ -47,26 +47,8 @@
         <script src="js/d3.min.js"></script>
         <script src="js/lodash.js"></script>
         <script src="js/contour.min.js"></script>
+        <script src="js.AppLoad.js"></script>
     
-    <script>
-        var onDeviceReady=function(){                             // called when Cordova is ready
-           if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
-               $.ui.launch(); 
-               navigator.splashscreen.hide() ;                 // hide splash screen
-            }
-        } ;
-        document.addEventListener("deviceready", onDeviceReady, false) ;
-    </script>
-    
-    <script>   
-        $.ui.autoLaunch = false;
-        $.ui.animateHeaders = false;
-                
-        $(document).ready(function(){
-            $.ui.setSideMenuWidth('260px');
-            $.ui.launch();
-        });
-    </script>
     </head>
     <body> 
 <div id="afui">
