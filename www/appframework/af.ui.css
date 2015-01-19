@@ -1,5 +1,5 @@
 /*src/main.css*/
-/**********************************************************
+/**********************************************************
 	GENERAL UI ELEMENTS
 **********************************************************/
 
@@ -24,7 +24,7 @@ body {
 	color:#000;
 	font-size:14px;
 	display:-webkit-box;
-	background: #CBD2D8;
+	background: #69D2E7;
     /* We want to layout our first container vertically */
     -webkit-box-orient: vertical;
     /* we want our child elements to stretch to fit the container */
@@ -594,8 +594,8 @@ body {
 }
 
 
-/*src/appframework.css*/
-/* blue #0190d6
+/*src/appframework.css*/
+/* blue #0190d6
 
  */
 
@@ -900,8 +900,8 @@ body {
 }
 
 
-/*src/lists.css*/
-#afui .list {
+/*src/lists.css*/
+#afui .list {
   margin: 0px;
   padding: 0px;
   margin-bottom: 10px;
@@ -978,8 +978,8 @@ body {
   border-bottom: none;
 }
 
-/*src/forms.css*/
-#afui select,
+/*src/forms.css*/
+#afui select,
 #afui textarea,
 #afui input[type="text"],
 #afui input[type=search],
@@ -1209,8 +1209,8 @@ body {
 }
 
 
-/*src/buttons.css*/
-#afui .button {
+/*src/buttons.css*/
+#afui .button {
 	position:relative;
 	display:inline-block;
 	padding:8px 12px;
@@ -1422,8 +1422,8 @@ body {
     white-space: nowrap;
 }
 
-/*src/badges.css*/
-#afui .af-badge {
+/*src/badges.css*/
+#afui .af-badge {
 	position:absolute;
 	top:2px; right:2px;
 	display:inline-block;
@@ -1447,7 +1447,7 @@ body {
 #afui .af-badge.tl { top:2px; left:2px; right:auto; bottom:auto; }
 
 
-/*src/grid.css*/
+/*src/grid.css*/
 
 #afui .grid {
   width: 100%;
@@ -1483,8 +1483,8 @@ body {
   }
 }
 
-/*../plugins/css/af.actionsheet.css*/
-#af_actionsheet {
+/*../plugins/css/af.actionsheet.css*/
+#af_actionsheet {
     position:absolute;
     left:0px;
     right:0px;
@@ -1543,7 +1543,7 @@ body {
      background-color:rgba(255,0,0,1); 
 }
 
-/*../plugins/css/af.popup.css*/
+/*../plugins/css/af.popup.css*/
 
 
 BODY>DIV#mask{
@@ -1625,8 +1625,8 @@ color:inherit;
     margin:8px;
 }
 
-/*../plugins/css/af.scroller.css*/
-/** This can be your default scrollbar class.  You must use !important to override the default inline styles */
+/*../plugins/css/af.scroller.css*/
+/** This can be your default scrollbar class.  You must use !important to override the default inline styles */
 .scrollBar { 
    position:absolute !important;
    width:5px !important;
@@ -1638,8 +1638,8 @@ color:inherit;
 }
 
 
-/*../plugins/css/af.selectbox.css*/
-	#afModalMask {
+/*../plugins/css/af.selectbox.css*/
+	#afModalMask {
 		position:absolute;
 		top:0px;
 		left:0px;
@@ -1734,8 +1734,8 @@ color:inherit;
 		color:black;
 	}
 
-/*src/android.css*/
-/* Bg #33B5E5
+/*src/android.css*/
+/* Bg #33B5E5
 
 /* Font header #C6C6C6
  * reg white-space:
@@ -2038,8 +2038,8 @@ color:inherit;
 }
 
 
-/*src/win8.css*/
-/* Bg #00ABA9
+/*src/win8.css*/
+/* Bg #00ABA9
 
 /* Font header #C6C6C6
  * reg white-space:
@@ -2485,8 +2485,8 @@ color:inherit;
     }
 }
 
-/*src/bb.css*/
-#afui.bb {
+/*src/bb.css*/
+#afui.bb {
     font-family: "Slate Pro",Slate,"Myriad Pro","BBAlpha Sans",Helvetica;
     font-size: 12pt;
 }
@@ -2738,8 +2738,8 @@ color:inherit;
 }
 
 
-/*src/ios7.css*/
-/** iOS 7 theme */
+/*src/ios7.css*/
+/** iOS 7 theme */
 
 /** Blue color color:rgba(82,155,234,255); */
 
@@ -3118,8 +3118,8 @@ color:inherit;
 }
 
 
-/*src/ios.css*/
-/* iOS theme */
+/*src/ios.css*/
+/* iOS theme */
 #afui.ios {
     color:black;
 }
@@ -3337,4 +3337,3 @@ color:white;
     text-shadow:0 -1px 0 #000;
 }
 
-
